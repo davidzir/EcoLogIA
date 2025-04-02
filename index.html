@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLogIA - Gestión de Residuos Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-left">
+                <img src="assets/logo1.png" alt="EcoLogIA Logo" class="logo">
+            </div>
+            <div class="nav-right">
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu">
+                    <h1 class="header-title">EcoLogIA - Gestión de Residuos Inteligente</h1>
+                    <a href="https://wa.me/5491150085086?text=Hola!%20Quiero%20más%20info%20sobre%20la%20plataforma%20EcoLogIA." 
+                       target="_blank" 
+                       class="cta-button secondary">Contactar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>La Plataforma Todo en Uno para Gestores de Residuos</h1>
+                <p class="hero-text">Automatiza la comunicación con clientes, optimiza rutas de recolección y gestiona datos de materiales recuperados en una única plataforma integrada.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="cta-button primary">Solicitar Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2>Todo lo que Necesitas en Una Sola Plataforma</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="assets/comm.png" alt="Comunicación" class="feature-icon">
+                        <h3>Comunicación Centralizada</h3>
+                        <p>Portal de autogestión para tus clientes, notificaciones automáticas y chat integrado. Olvídate de las llamadas y WhatsApp dispersos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/optimization.png" alt="Rutas" class="feature-icon">
+                        <h3>Optimización de Rutas</h3>
+                        <p>Algoritmos especializados para el sector de residuos, considerando tipos de contenedores, urgencias y ventanas horarias de recolección.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/basuranalytics.png" alt="Análisis" class="feature-icon" loading="lazy">
+                        <h3>Control de Materiales</h3>
+                        <p>Seguimiento detallado de materiales recuperados, enfardados y vendidos. Reportes automáticos de trazabilidad para tus clientes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/pgrowth.png" alt="Crecimiento" class="feature-icon" loading="lazy">
+                        <h3>Escalá tu Operación</h3>
+                        <p>Gestiona más clientes sin aumentar tu personal administrativo. Toma decisiones basadas en datos para crecer de manera eficiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Beneficios</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h3>30%</h3>
+                        <p>Reducción en costos de combustible mediante optimización de rutas</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>50%</h3>
+                        <p>Menos tiempo en tareas administrativas y coordinación</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>100%</h3>
+                        <p>Trazabilidad de materiales recuperados</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>24/7</h3>
+                        <p>Portal de autogestión para tus clientes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>¿Listo para Optimizar tu Gestión de Residuos?</h2>
+                <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" required placeholder="Empresa">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" required placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <select id="company_size" required>
+                            <option value="" disabled selected>Cantidad de camiones</option>
+                            <option value="1-5">1-5 camiones</option>
+                            <option value="6-19">6-19 camiones</option>
+                            <option value="20-100">20-100 camiones</option>
+                            <option value="101+">101+ camiones</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="waste_volume" required>
+                            <option value="" disabled selected>Volumen mensual de residuos</option>
+                            <option value="0-1000">0-1000 kg</option>
+                            <option value="1001-5000">1001-5000 kg</option>
+                            <option value="5001-10000">5001-10000 kg</option>
+                            <option value="10001+">Más de 10000 kg</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary">Solicitar Demo</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <div class="container">
+                <h2>¿Por qué EcoLogIA?</h2>
+                <div class="why-us-grid">
+                    <div class="why-us-item">
+                        <h3>Diseñado Específicamente para tu Industria</h3>
+                        <p>No es una adaptación de software genérico. Cada función está pensada para las necesidades específicas de empresas gestoras de residuos.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Todo Integrado</h3>
+                        <p>Dejá de usar múltiples herramientas. Unificá la comunicación, logística y gestión de datos en una sola plataforma.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Implementación Simple</h3>
+                        <p>Te acompañamos en todo el proceso de implementación, incluyendo la capacitación de tu equipo y la migración de datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>¿Qué es EcoLogIA y qué problema soluciona?</h3>
+                        <p>EcoLogIA es una plataforma que optimiza la gestión de residuos mediante tecnología y análisis de datos. Ayudamos a empresas de recolección y tratamiento de residuos a mejorar su eficiencia operativa, reducir costos y aumentar su impacto ambiental positivo.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Mis clientes necesitan instalar algo?</h3>
+                        <p>No, tus clientes acceden a través de un portal web responsive, sin necesidad de instalar ninguna aplicación.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Para qué tipo de empresas está diseñada EcoLogIA?</h3>
+                        <p>EcoLogIA está diseñada para empresas dedicadas a la gestión de residuos, incluyendo recolección, tratamiento y reciclaje. Es ideal para aquellas que prestan servicios a negocios como comercios, restaurantes, eventos y otras industrias que buscan optimizar la trazabilidad, logística y gestión eficiente de sus residuos.</p>
+                    </div>                    
+                    <div class="faq-item">
+                        <h3>¿Puedo integrar mi sistema de facturación actual?</h3>
+                        <p>En un futuro contaremos con APIs que permiten la integración con los principales sistemas de gestión y facturación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/logo1.png" alt="EcoLogIA Logo" loading="lazy">
+                    </a>                </div>
+                <div class="footer-links">
+                    <a href="#features">Características</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+            </div>
+            <p class="copyright">© 2024 EcoLogIA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h3>¡Gracias por tu interés!</h3>
+            <p>Tu solicitud ha sido enviada exitosamente.</p>
+            <button class="cta-button primary" onclick="closePopup()">Aceptar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
