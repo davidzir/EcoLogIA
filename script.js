@@ -15,7 +15,7 @@ function handleSubmit(event) {
         `*Email:* ${email}%0A` +
         `*Empresa:* ${company}%0A` +
         `*Teléfono:* ${phone}%0A` +
-        `*Tamaño de la empresa:* ${companySize}%0A` +
+        `*Cantidad de camiones:* ${companySize}%0A` +
         `*Volumen de residuos:* ${wasteVolume}%0A` +
         `*Mensaje:* ${message}`;
     
